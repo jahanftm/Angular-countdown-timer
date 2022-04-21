@@ -1,0 +1,22 @@
+::ng-deep {
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    background: #92d1d4;
+  }
+
+  html, body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
