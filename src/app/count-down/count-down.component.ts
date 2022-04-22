@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-count-down',
@@ -17,8 +17,12 @@ export class CountDownComponent implements OnInit {
 
   leftTime = 0;
 
+  // currentTime should come from backend Api
+
+  @Input()
   currentTime = +new Date();
 
+  @Input()
   endTime = 1682093605000;
 
   constructor() {
